@@ -9,36 +9,119 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="px-5">
     <!-- Header Section -->
     <header class="">
         <!-- Main div -->
-        <div class="mt-5 px-2">
+        <div class="mt-5 ">
             <!-- Nav Bar -->
             <nav class="flex justify-between container mx-auto">
                 <div class="flex justify-between gap-3 md:gap-5">
-                    <img class="h-8 w-15 md:h-10 md:w-20" src="./images/original-e4831f58373c8155ca3f68f421de6e90.webp">
-                    <h3 class="font-bold text-xl md:text-2xl">Tea House</h3>
+                    <h3 class="font-bold text-xl md:text-2xl"><span
+                            class="text-orange-500 text-2xl md:text-3xl">Khan</span> <span
+                            class="text-orange-400">Tea</span> <span class="text-orange-300">House</span></h3>
                 </div>
 
-                <div class="">
+                <div class="cursor-pointer">
                     <ul class=" justify-between gap-8 hidden md:flex ">
-                        <li>About</li>
-                        <li>Product</li>
-                        <li>Items</li>
-                        <li>Contuct</li>
+                        <li class="text-amber-300 font-bold hover:scale-150  transition">About</li>
+                        <li class="text-green-400 font-bold hover:scale-150  transition">Product</li>
+                        <li class="text-purple-500 font-bold hover:scale-150  transition">Items</li>
+                        <li class="text-pink-400 font-bold hover:scale-150  transition">Contuct</li>
                     </ul>
-                    <div class="block md:hidden text-2xl">
+                    <div class="block md:hidden text-2xl text-cyan-400 hover:rotate-90">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
             </nav>
             <!-- Hero section -->
-            <section>
-
+            <section class="container mx-auto mt-8 ">
+                <div class="md:grid md:grid-cols-2 mt-15">
+                    <!-- content Part -->
+                    <div class="text-center md:text-left">
+                        <h1 class="text-[25px] md:text-[40px] font-bold md:max-w-[85%] text-[#1C1C1C]">
+                            It's good
+                            tea time at The Tea House
+                        </h1>
+                        <p class="text-[16px] text-[#777777] font-medium my-[30px] md:max-w-[85%]">
+                            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                        </p>
+                        <button class="bg-[#FF0000] rounded-md cursor-pointer px-3 py-2 text-white mb-8">Explore More <i
+                                class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                    <!-- Image Part -->
+                    <div class="">
+                        <div><img src="./images/banner.png "></div>
+                        <div
+                            class="flex h-12 w-30 bg-gray-50 rounded-md absolute  bottom-32 left-18 md:relative md:bottom-10 md:left-25 shadow-md sm:bottom-80 sm:left-60">
+                            <div class="">
+                                <i class="fa-regular fa-star h-11 w-11 text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">5.00</h3>
+                                <p class="text-[10px]">Lorem ipsum dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </header>
+
+    <!-- Main  -->
+    <main>
+        <!-- Our Featured Products -->
+        <section>
+            <!-- Main div -->
+            <div class="mt-15 text-center ">
+                <!-- Our Featured Products Content -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Our Featured Products</h2>
+                    <p class="mb-5">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </p>
+                </div>
+
+                <!-- Our Featured Products Cards -->
+                <div class="grid md:grid-cols-4 items-center text-center">
+                    <!-- Our Featured Products Card 1 -->
+                    <div>
+                        <img src="./images/tea-1.png">
+                        <h3>Lemon Tea</h3>
+                        <p>
+                            Creamer could be replaced by fresh milk
+                        </p>
+                    </div>
+                    <!-- Our Featured Products Card 2 -->
+                    <div>
+                        <img src="./images/tea-2.png">
+                        <h3>Lemon Tea</h3>
+                        <p>
+                            Creamer could be replaced by fresh milk
+                        </p>
+                    </div>
+                    <!-- Our Featured Products Card 3 -->
+                    <div>
+                        <img src="./images/tea-3.png">
+                        <h3>Lemon Tea</h3>
+                        <p>
+                            Creamer could be replaced by fresh milk
+                        </p>
+                    </div>
+                    <!-- Our Featured Products Card 4 -->
+                    <div>
+                        <img src="./images/tea-4.png">
+                        <h3>Lemon Tea</h3>
+                        <p>
+                            Creamer could be replaced by fresh milk
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
